@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 24px;
+  color: #24352b;
+  background: #f8faf4;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: #245c3b;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+h1::before {
+  content: "🌿 ";
+}
+
+p {
+  color: #536557;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(36, 92, 59, 0.08);
+  margin-top: 24px;
+}
+
+th {
+  background: #245c3b;
+  color: white;
+  padding: 16px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e7ede5;
+}
+
+tr:nth-child(even) {
+  background: #f3f7f0;
+}
+
+tbody tr:hover {
+  background: #dce9d5;
+  transition: background 0.2s ease;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+a {
+  color: #245c3b;
+  font-weight: bold;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #477d4e;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 10px 8px;
+  }
+}
